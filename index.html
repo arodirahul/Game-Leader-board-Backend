@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	label{display:inline-block;width:100px;margin-bottom:5px}
+</style>
+<title>Add Player</title>
+</head>
+<body>
+<h1>Add Player</h1>
+<form method = "post" action = "registration.php">
+	<label>Name: </label>
+	<input type = "text" name = "name" /><br />
+	<label>Email: </label>
+	<input type = "text" name = "email" /><br />
+	<label>Country Code: </label>
+	<input type = "text" name = "country_code" /><br />
+	<label>Phone Number: </label>
+	<input type = "text" name = "phone_number" /><br />
+	<label>Score: </label>
+	<input type = "text" name = "score" /><br />
+	<label>Date: </label>
+	<input type = "text" name = "date" /><br />
+	<label>Time: </label>
+	<input type = "text" name = "time" /><br />
+	<label>City: </label>
+	<input type = "text" name = "city" /><br />
+	<label>UDID: </label>
+	<input type = "text" name = "udid" /><br />
+	<input type = "submit" value = "Add Player" />
+</form>
+<form method = "post" action = "serverprocess.php">
+	<input type = "submit" value = "End of the day" />
+</form>
+<form method = "post" action = "database.php">
+	<input type = "submit" value = "Test connection" />
+</form>
+<form method = "post" action = "showwinner.php">
+	<label>Winner count: </label>
+	<input type = "text" name = "count" /><br />
+	<input type = "submit" value = "Transfer final list of winners" />
+</form>
+<form method = "post" action = "leaderboard.php">
+	<label>Show today's top ten scorers: </label>
+	<input type = "submit" value = "Show Winners" />
+</form>
+</body>
+</html>
